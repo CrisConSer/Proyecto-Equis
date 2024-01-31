@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E4E2E1;
+  color: #fff;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  gap: 6em;
+  align-items: center;
+}
+
+.color-q{
+  color: #EBC649;
+  flex: auto;
+}
+
+.titulo {
+  color: #424242;
+  flex:auto;
+}
+
+.barra-busqueda {
+  display: flex;
+  margin-left: auto;
+}
+
+.barra-busqueda input {
+  padding: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.input-container{
+  position: relative;
+
+}
+.lupa-icono {
+  width: 16px;
+  height: 16px; 
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+
+}
+
+.usuario-icono {
+  width: 24px;
+  height: 24px;
+}
+
+.lupa-icono {
+  width: 24px;
+  height: 24px;
+}
+
+.navegacion {
+  color: #424242;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+}
+
+.navegacion:hover {
+  background-color: #f4efef9f;
+}
+
