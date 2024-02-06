@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js.js" defer></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+  ></script>
     <link rel="icon" type="image/png" href="imagen/pruebalogopequeño.png" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,8 +48,49 @@
             </div>
         </header>
 
-    <footer>
-        <p>&copy; 2024 Tu Plataforma de Cursos. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="container grid grid--footer-cols">
+          <div class="logo-col">
+              <a href="#" class="footer-logo"><img class="logo" src="imagen/logo equis.png" alt="logo equis"></a>
+              <ul class="social-links">
+                <li><a href="#" class="footer-link"><ion-icon name="logo-tiktok" class="redes"></ion-icon></a></li>
+                <li><a href="#" class="footer-link"><ion-icon name="logo-twitter" class="redes"></ion-icon></a></li>
+                <li><a href="#" class="footer-link"><ion-icon name="logo-whatsapp" class="redes"></ion-icon></a></li>
+              </ul>
+              <p class="copyright">Copyright &copy; 2024 by Cris, Antonio and Lunna, Inc. All rights reserved.</p>
+          </div>
+          <div class="address-col">
+              <p class="footer-heading">Contacta con nosotros</p>
+              <address class="contacts">
+                <p class="address">
+                  C. Frederick Terman, 3, Campanillas,<br>29590 Málaga
+                </p>
+                <p>
+                  <a class="footer-link" href="tel:687-425-789">Tlfn: 687-425-789</a>
+                  <br>
+                  <a class="footer-link" href="email@email.com">equis.support@email.com</a>
+                </p>
+              </address>
+          </div>
+          <nav class="nav-col">
+              <p class="footer-heading">Categorias</p>
+              <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Inteligencia artificial</a></li>
+                <li><a class="footer-link" href="#">Diseño</a></li>
+                <li><a class="footer-link" href="#">Diseño Web y App</a></li>
+                <li><a class="footer-link" href="#">Fotografia y video</a></li>
+              </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Idioma</p>
+            <ul class="footer-nav">
+              <li><button class="idioma-boton">Español</button></li>
+            </ul>
+          </nav>
+
+         
+        </div>
     </footer>
 
 </body>

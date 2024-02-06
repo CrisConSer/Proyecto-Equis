@@ -53,11 +53,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.6rem 4.8rem 1.6rem 4.8rem ;
+    padding: 1.6rem 4.8rem 1.6rem 4.8rem;
     background-image: linear-gradient(to bottom, #8a8075, #f3f2f1);
     font-weight: 800;
     transition: transform 0.3s ease-in-out; /* Añadido para suavizar la animación */
-    
+    z-index: 1000;    
 }
 .navegacion.oculto {
     transform: translateY(-100%);
@@ -85,11 +85,11 @@ body{
     align-items: center;
 }
 .barra-busqueda input {
-    width: 30rem;
+    width: 45rem;
     padding: 1rem;
     border: none;
     box-shadow: 0 0 1rem #00000033;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 .input-container {
     position: relative;
@@ -106,10 +106,7 @@ body{
     width: 3rem;
     height: 3rem;
 }
-.usuario-icono:hover {
-    transition: 0.4s;
-    color: #ebcc49;
-}
+
 
 /*--------------- HEADER ---------------*/
 .carrusel {
@@ -151,10 +148,111 @@ body{
     background-color: #424242;
 }
 
-/*--------------- HEADER ---------------*/
+/*--------------- FOOTER ---------------*/
+/*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/
 footer{
-    padding: 1.6rem 4.8rem 1.6rem 4.8rem ;
-    height: 450px;
+    font-size: 1.6rem;
+    padding-left: 4.8rem ;
+    padding-top: 9.8rem;
+    height: 40rem;
     background-color: #adb5bd; 
     background-image: linear-gradient(#f3f2f1, #616161);  
+}
+
+.grid--footer-cols{
+    display: grid;
+    grid-template-columns: 6fr 4fr 4fr 1fr 1fr;
+}
+
+.footer-heading{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #424242;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active{
+    color: #ebcc49;
+}
+
+.logo-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.redes{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    background-color: #4242420b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.social-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #424242;
+    margin-top: auto;
+}
+
+.address-col{
+
+}
+
+.contacts{
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address{
+    margin-bottom: 2.4rem;
+}
+
+.idioma-boton{
+    padding: 1.2rem 8rem 1.2rem 8rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: 2px solid #424242;
+    color: #424242;
+    border-radius: 0.5rem;
+    background-color: #4242420b;
+    cursor: pointer;
+
 }
