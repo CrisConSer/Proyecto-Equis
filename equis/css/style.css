@@ -148,6 +148,16 @@ body{
     background-color: #424242;
 }
 
+/*--------------- SECTION CARDS ---------------*/
+
+.card{
+    width: 320px;
+    height: 477px;
+    background-color: #ebcc49;
+    margin-left: 4rem;
+    
+}
+
 /*--------------- FOOTER ---------------*/
 /*SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/
