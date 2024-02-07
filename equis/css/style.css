@@ -151,23 +151,28 @@ body{
 /*--------------- SECTION CARDS ---------------*/
 .container-cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-left: auto; /* Cambiado de margin-left: 2rem; a margin-left: auto; */
     margin-right: auto; /* Agregado para centrar horizontalmente */
-    max-width: 130rem; /* Agregado para limitar el ancho máximo */
+    max-width: 10rem; /* Agregado para limitar el ancho máximo */
     justify-content: center; /* Agregado para centrar horizontalmente en el contenedor */
-    gap: 2rem; /* Agregado para agregar espacio entre las tarjetas */
+    gap: 5rem; /* Agregado para agregar espacio entre las tarjetas */
     margin-bottom: 20rem;
+    align-items: center;
+  }
+
+  .container-cards-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: auto; /* Cambiado de margin-left: 2rem; a margin-left: auto; */
+    margin-right: auto; /* Agregado para centrar horizontalmente */
+    max-width: 10rem; /* Agregado para limitar el ancho máximo */
+    justify-content: center; /* Agregado para centrar horizontalmente en el contenedor */
+    gap: 5rem; /* Agregado para agregar espacio entre las tarjetas */
+    margin-bottom: 20rem;
+    align-items: center;
   }
   
-.card{
-    width: 320px;
-    height: 477px;
-    background-color: #ebcc49;
-    margin-left: 4rem;
-    
-}
-
 /*--------------- SECTION OPINION ---------------*/
 .opinion{
     width: 130rem;
