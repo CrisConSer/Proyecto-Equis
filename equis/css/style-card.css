@@ -14,8 +14,63 @@
 
 }
 
-.card-header {
+.card-header-1 {
   background-image: url(../imagen/tamaño_imagen.jpg);
+  height: 174px;
+  width: 320px;
+  color: #fff;
+
+}
+.card-header-2 {
+  background-image: url(../imagen/tamaño_imagen_2.jpg);
+  height: 174px;
+  width: 320px;
+  color: #fff;
+
+}
+
+.card-header-3 {
+  background-image: url(../imagen/tamaño_imagen_3.jpg);
+  height: 174px;
+  width: 320px;
+  color: #fff;
+
+}
+
+.card-header-4 {
+  background-image: url(../imagen/tamaño_imagen_4.jpg);
+  height: 174px;
+  width: 320px;
+  color: #fff;
+
+}
+
+.card-header-5 {
+  background-image: url(../imagen/tamaño_imagen_4.jpg);
+  height: 174px;
+  width: 320px;
+  color: #fff;
+
+}
+
+.card-header-6 {
+  background-image: url(../imagen/tamaño_imagen_4.jpg);
+  height: 174px;
+  width: 320px;
+  color: #fff;
+
+}
+
+.card-header-7{
+  background-image: url(../imagen/tamaño_imagen_4.jpg);
+  height: 174px;
+  width: 320px;
+  color: #fff;
+
+}
+
+.card-header-8 {
+  background-image: url(../imagen/tamaño_imagen_4.jpg);
   height: 174px;
   width: 320px;
   color: #fff;
