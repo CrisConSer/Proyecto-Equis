@@ -99,7 +99,8 @@
 }
 
 .card-precio {
-  color: red;
+  color: #428bca;
+  font-weight: 600;
 }
 
 
@@ -118,11 +119,20 @@ ul {
   cursor: pointer;
   width: 320px;
   height: 60px;
-
-
-
 }
 
 .boton-comprar:hover {
   background-color: #337ab7;
 }
+
+.card-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+
+.card-title:hover{
+  color: #337ab7;
+  cursor: pointer;
+}
+
