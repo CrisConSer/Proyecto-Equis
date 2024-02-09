@@ -142,6 +142,7 @@ body{
     border-radius: 50%;
     border: 2px solid #424242;
     background-color: #e6fcf5;
+    cursor: pointer;
 }
 
 .dot--fill{
