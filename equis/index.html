@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js.js" defer></script>
+    <script src="./js/js.js" defer></script>
     <script
     type="module"
     src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -41,14 +41,17 @@
             <div class="img-container">
             <img src="./imagen/Carrusel/dot1.jpg" alt="" id="imagen-principal">
             </div>
-            <div class="dots">
-                <button class="dot dot--fill" id="dot-one"></button>
+            <img onmouseout="this.src='./imagen/flecha_gris.png'" onmouseover="this.src='./imagen/flecha_amarilla.png'" src="./imagen/flecha_gris.png" id="arrow-image-right"/>           
+            <img onmouseout="this.src='./imagen/flecha_gris_left.png'" onmouseover="this.src='./imagen/flecha_amarilla_left.png'" src="./imagen/flecha_gris_left.png" id="arrow-image-left"/>           
+
+              <div class="dots">
+                <button class="dot"  id="dot-one"></button>
                 <button class="dot" id="dot-two"></button>
                 <button class="dot" id="dot-three"></button>
                 <button class="dot" id="dot-four"></button>
             </div>
         </header>
-
+        <p class="title-cards">Cursos destacados</p>
         <section class="container-cards">
           <div class="card">
               <div class="card-header-1"></div>
@@ -69,7 +72,6 @@
                     </div>
                   </div>
                   <p class="card-precio">Precio: 19.99€</p>
-      
                 </div>
                   <div class="card-footer">
                       <nav class="nav-col">
@@ -173,7 +175,7 @@
             </div>
             <!--Segunda Fila Card-->
         </section>
-    
+        <p class="title-cards">Cursos recomendados</p>
         <section class="container-cards-two">
           <div class="card">
             <div class="card-header-5"></div>
