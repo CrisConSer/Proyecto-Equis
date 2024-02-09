@@ -131,12 +131,14 @@ body{
     width: 8rem;
     height: 8rem;
     margin-left: 7rem;
+    cursor: pointer;
   }
 
 #arrow-image-left {
     width: 8rem;
     height: 8rem;
     margin-left: -160rem;
+    cursor: pointer;
   }
 
 .dots{
@@ -157,8 +159,7 @@ body{
     cursor: pointer;
 }
 
-
-.dot--fill{
+.active{
     background-color: #424242;
 }
 
