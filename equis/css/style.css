@@ -70,11 +70,43 @@ body{
     border-radius: 0.3rem;
     cursor: pointer;
 }
+
 .enlaces:hover {
     transition: 0.4s;
     color: #ebcc49;
     text-shadow: 0 0 1rem #00000066;
 }
+.list-ul {
+    list-style-type: none;
+    padding: 1rem;
+    position: absolute; 
+    display: none; 
+  }
+  
+  .list-li {
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+    color:#424242;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .list-li:hover .list-ul {
+    display: block;
+    background-color: #f3f2f1b4;
+    border-radius: 1rem;
+    cursor: pointer;
+   
+  }
+  
+  .list-ul li {
+    display: block;
+  }
+
+  .list-li:hover {
+    color:#ebcc49;
+  }
+  
 .titulo {
     color: #424242;
     flex: 1;

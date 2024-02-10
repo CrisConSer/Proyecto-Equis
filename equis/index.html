@@ -24,8 +24,20 @@
 <body>  
         <nav class="navegacion">
             <img src="imagen/logo equis.png" alt="logo equis" class="logo">
-            <a href="#" class="enlaces">Categorias</a> 
-            <a href="#" class="enlaces">Enseña equis</a> 
+            <ul>
+              <li class="list-li">
+                <a href="#" class="enlaces">Categorias</a>
+                <ul class="list-ul">
+                  <li class="list-li">Inteligencia Artificial</li>
+                  <li class="list-li">Ciencia de Datos</li>
+                  <li class="list-li">Lenguajes de programación</li>
+                  <li class="list-li">Desarrollo Web</li>
+                  <li class="list-li">Diseño de Interfaz</li>
+                  <li class="list-li">Desarrollo Móvil</li>
+                </ul>
+              </li>
+            </ul>
+            <a href="#" class="enlaces">Enseña equis</a>
             <form action="#" method="get" class="barra-busqueda">
               <div class="input-container">
                 <svg xmlns="http://www.w3.org/2000/svg" class="lupa-icono" width="22" height="23" viewBox="0 0 22 23" fill="none">
@@ -34,7 +46,16 @@
                 <input type="text" id="searchInput" name="q" placeholder="Buscar cursos">
               </div> 
             </form>
-            <a href="#" class="enlaces">Mi aprendizaje</a>
+            <ul>
+              <li class="list-li">
+                <a href="#" class="enlaces">Mi aprendizaje</a>
+                <ul class="list-ul">
+                  <li class="list-li">Aprende JS</li>
+                  <li class="list-li">Phyton</li>
+                  <li class="list-li">PHP</li>
+                </ul>
+              </li>
+            </ul>
             <a href="#" class="enlaces">Cesta</a>
             <a href="" class="enlaces"><img src="imagen/usuario.png" alt="muñeco usuario" class="usuario-icono"></a>
         </nav>
