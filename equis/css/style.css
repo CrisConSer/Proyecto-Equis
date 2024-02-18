@@ -78,9 +78,10 @@ body{
 }
 .list-ul {
     list-style-type: none;
-    padding: 1rem;
+    padding: 2rem;
     position: absolute; 
     display: none; 
+    margin-top: 1.0rem;
   }
   
   .list-li {
@@ -93,7 +94,7 @@ body{
   /* Estilos para el menú desplegable */
   .list-li:hover .list-ul {
     display: block;
-    background-color: #f3f2f1b4;
+    background-color: #f3f2f1;
     border-radius: 1rem;
     cursor: pointer;
    

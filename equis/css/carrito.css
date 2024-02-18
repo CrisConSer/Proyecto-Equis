@@ -1,0 +1,65 @@
+/* Agrega estos estilos para el carrito */
+.carrito {
+  display: none; /* Inicializamos el carrito como oculto */
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.carrito-visible {
+  display: block;
+  background-image: #f3f2f1;
+  border-radius: 0.9rem;
+  margin-top: 5rem;
+}
+
+.submenu {
+  position: relative;
+}
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.cerrar-carrito-btn{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  background-color: #f3f2f1;
+  margin-top: 1rem;
+  align-items: center;
+}
