@@ -84,26 +84,21 @@ function actualizarCarrito() {
     `;
     listaCursos.appendChild(filaCursoCarrito);
 
-    // Manejamos el cambio en la cantidad si el elemento está presente
-    const cantidadInput = filaCursoCarrito.querySelector(".input-cantidad");
-    cantidadInput.addEventListener("change", () => {
-      const nuevaCantidad = parseInt(cantidadInput.value);
-      carritoCursos[index].cantidad = nuevaCantidad;
-      actualizarCarrito(); // Actualizamos el carrito al cambiar la cantidad
-    });
+    // Extraemos el precio del curso y eliminamos el símbolo "$"
+    const precioCurso = parseFloat(item.precio.replace("$", "").trim());
 
-    // Extraemos el precio del curso
-    const precioCurso = parseFloat(item.precio.replace("$", ""));
+    // Verificamos si el precio es un número válido
+    if (!isNaN(precioCurso)) {
+      // Calculamos el precio total por artículo (considerando la cantidad)
+      const precioTotalItem = precioCurso * item.cantidad;
 
-    // Calculamos el precio total por artículo (considerando la cantidad)
-    const precioTotalItem = precioCurso * item.cantidad;
-
-    // Sumamos al total
-    total += precioTotalItem;
+      // Sumamos al total
+      total += precioTotalItem;
+    }
   });
 
   // Actualizamos el precio total en el carrito
-  totalCarrito.textContent = `Total: ${total.toFixed(2)}`;
+  totalCarrito.textContent = `Total: $${total.toFixed(2)}`;
 
   // Almacenamos el carrito en localStorage
   localStorage.setItem("carrito", JSON.stringify(carritoCursos));
@@ -119,6 +114,7 @@ function actualizarCarrito() {
     });
   });
 }
+
 
 
   // Función para vaciar el carrito
