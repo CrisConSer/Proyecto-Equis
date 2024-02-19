@@ -92,14 +92,14 @@ function actualizarCarrito() {
       actualizarCarrito(); // Actualizamos el carrito al cambiar la cantidad
     });
 
-    // Convertir el precio a un número con dos decimales
-    const precioSinSimbolo = parseFloat(item.precio.replace("$", "").trim()).toFixed(2);
-    
+    // Extraemos el precio del curso
+    const precioCurso = parseFloat(item.precio.replace("$", ""));
+
     // Calculamos el precio total por artículo (considerando la cantidad)
-    const precioTotalItem = precioSinSimbolo * item.cantidad;
+    const precioTotalItem = precioCurso * item.cantidad;
 
     // Sumamos al total
-    total += parseFloat(precioTotalItem);
+    total += precioTotalItem;
   });
 
   // Actualizamos el precio total en el carrito
@@ -119,6 +119,7 @@ function actualizarCarrito() {
     });
   });
 }
+
 
   // Función para vaciar el carrito
   function vaciarCarrito() {
