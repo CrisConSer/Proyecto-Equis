@@ -103,7 +103,7 @@ function actualizarCarrito() {
   });
 
   // Actualizamos el precio total en el carrito
-  totalCarrito.textContent = `Total: $${total.toFixed(2)}`;
+  totalCarrito.textContent = `Total: ${total.toFixed(2)}`;
 
   // Almacenamos el carrito en localStorage
   localStorage.setItem("carrito", JSON.stringify(carritoCursos));

@@ -6,14 +6,16 @@
   right: 0;
   background-color: white;
   padding: 10px;
-  border: 1px solid black;
+  color: #424242;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .carrito-visible {
   display: block;
   background-image: #f3f2f1;
   border-radius: 0.9rem;
-  margin-top: 5rem;
+  margin-top: 7rem;
+  margin-right: 4rem;
 }
 
 .submenu {
@@ -21,6 +23,7 @@
 }
 
 .u-full-width {
+  text-decoration: none;
   width: 100%;
   box-sizing: border-box;
 }
@@ -57,9 +60,23 @@ tbody {
 }
 
 .cerrar-carrito-btn{
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
-  background-color: #f3f2f1;
+  font-weight: 4rem;
   margin-top: 1rem;
-  align-items: center;
+  margin-left: 50rem;
+  border: 0.1rem solid black;
+  background-color:white;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.7rem;
+
+}
+
+a{
+  text-decoration: none;
+  color: #ebcc49;
+}
+
+.carrito-cerrar-vaciar{
+  display: flex;
 }
