@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/js.js" defer></script>
+  <script src="./js/arrow.js" defer></script>
+  <script src="./js/carrito.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <link rel="icon" type="image/png" href="imagen/pruebalogopequeño.png" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-card.css" rel="stylesheet">
+  <link href="css/carrito.css" rel="stylesheet">
+  <title>Equis</title>
+</head>
+
+<body>
+  <button id="openChatbotBtn">Abrir Chatbot</button>
+  <nav class="navegacion">
+    <img src="imagen/logo equis.png" alt="logo equis" class="logo">
+    <ul>
+      <li class="list-li">
+        <a href="#" class="enlaces">Categorias</a>
+        <ul class="list-ul">
+          <li class="list-li">Inteligencia Artificial</li>
+          <li class="list-li">Ciencia de Datos</li>
+          <li class="list-li">Lenguajes de programación</li>
+          <li class="list-li">Desarrollo Web</li>
+          <li class="list-li">Diseño de Interfaz</li>
+          <li class="list-li">Desarrollo Móvil</li>
+        </ul>
+      </li>
+    </ul>
+    <a href="#" class="enlaces">Enseña equis</a>
+    <form action="#" method="get" class="barra-busqueda">
+      <div class="input-container">
+        <svg xmlns="http://www.w3.org/2000/svg" class="lupa-icono" width="22" height="23" viewBox="0 0 22 23"
+          fill="none">
+          <path
+            d="M16.1319 14.8329H15.1125L14.7512 14.4688C15.5576 13.49 16.147 12.3369 16.4771 11.0923C16.8073 9.8476 16.8701 8.54207 16.661 7.2691C16.0545 3.52092 13.0607 0.527765 9.44761 0.0693544C8.17735 -0.098551 6.88717 0.0393846 5.67579 0.472606C4.46441 0.905828 3.36393 1.62285 2.45857 2.56881C1.5532 3.51477 0.866952 4.6646 0.452323 5.9303C0.0376943 7.19601 -0.0943215 8.54404 0.0663779 9.87125C0.505115 13.6464 3.36981 16.7744 6.95713 17.4081C8.17547 17.6266 9.42497 17.561 10.6162 17.216C11.8075 16.871 12.911 16.2552 13.8479 15.4126L14.1963 15.7901V16.8553L19.6805 22.5854C20.2096 23.1382 21.0741 23.1382 21.6032 22.5854C22.1323 22.0326 22.1323 21.1293 21.6032 20.5765L16.1319 14.8329ZM8.38948 14.8329C5.17637 14.8329 2.58266 12.1229 2.58266 8.76567C2.58266 5.40849 5.17637 2.69847 8.38948 2.69847C11.6026 2.69847 14.1963 5.40849 14.1963 8.76567C14.1963 12.1229 11.6026 14.8329 8.38948 14.8329Z"
+            fill="#787878" />
+        </svg>
+        <input type="text" id="searchInput" name="q" placeholder="Buscar cursos">
+      </div>
+    </form>
+    <ul>
+      <li class="submenu">
+        <img src="imagen/cart.png" id="img-carrito" />
+        <div id="carrito" class="carrito">
+
+          <table id="lista-carrito" class="u-full-width">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="total-carrito" class="total-carrito">
+            
+          </div>
+          <div class="carrito-cerrar-vaciar">
+            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+            <br>
+            <button id="cerrar-carrito" class="cerrar-carrito-btn">Cerrar</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+    <a href="" class="enlaces"><img src="imagen/usuario.png" alt="muñeco usuario" class="usuario-icono"></a>
+  </nav>
+  <header class="carrusel">
+    <div class="img-container">
+      <img src="./imagen/Carrusel/dot1.jpg" alt="" id="imagen-principal">
+    </div>
+    <img onmouseout="this.src='./imagen/flecha_gris.png'" onmouseover="this.src='./imagen/flecha_amarilla.png'"
+      src="./imagen/flecha_gris.png" id="arrow-image-right" />
+    <img onmouseout="this.src='./imagen/flecha_gris_left.png'"
+      onmouseover="this.src='./imagen/flecha_amarilla_left.png'" src="./imagen/flecha_gris_left.png"
+      id="arrow-image-left" />
+
+    <div class="dots">
+      <button class="dot" id="dot-one"></button>
+      <button class="dot" id="dot-two"></button>
+      <button class="dot" id="dot-three"></button>
+      <button class="dot" id="dot-four"></button>
+    </div>
+  </header>
+  </header>
+  <p class="title-cards">Cursos destacados</p>
+  <section class="container-cards">
+    <div class="card">
+      <div class="card-header-1"></div>
+      <div class="card-body">
+        <p class="card-title">JavaScript: Desde Cero</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>10k</p>
+          </div>
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>50k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card-header-2"></div>
+      <div class="card-body">
+        <p class="card-title">Aprende HTML en 2h</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>00k</p>
+          </div>
+
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>00k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card-header-3"></div>
+      <div class="card-body">
+        <p class="card-title">PHP con Antonio</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>00k</p>
+          </div>
+
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>00k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header-4"></div>
+      <div class="card-body">
+        <p class="card-title">Python con Cris</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>00k</p>
+          </div>
+
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>00k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <!--Segunda Fila Card-->
+  </section>
+  <p class="title-cards">Cursos recomendados</p>
+  <section class="container-cards-two">
+    <div class="card">
+      <div class="card-header-5"></div>
+      <div class="card-body">
+        <p class="card-title">Diseño interfaz: Figma</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>00k</p>
+          </div>
+
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>00k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card-header-6"></div>
+      <div class="card-body">
+        <p class="card-title">React con Lunna</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>00k</p>
+          </div>
+
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>00k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card-header-7"></div>
+      <div class="card-body">
+        <p class="card-title">TypeScript</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>00k</p>
+          </div>
+
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>00k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header-8"></div>
+      <div class="card-body">
+        <p class="card-title">Angular</p>
+        <br>
+        <p class="card-author"><b>Victor Robles</b></p>
+        <p>Aprende JavaScript con NodeJS</p>
+        <br>
+
+        <div class="card-icons">
+          <div class="card-icons-thumb">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>00k</p>
+          </div>
+
+          <div class="card-icons-like">
+            <ion-icon name="heart"></ion-icon>
+            <p>00k</p>
+          </div>
+        </div>
+        <br>
+        <p class="card-precio">Precio: 19.99€</p>
+
+      </div>
+      <div class="card-footer">
+        <nav class="nav-col">
+          <ul class="comprar-nav">
+            <li><button class="boton-comprar">COMPRAR</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="opinion">
+    <div class="img-opinion">
+      <img src="imagen/fondo-opinion.jpg" alt="pagina opiniones">
+      <div class="encima-imagen">
+        <div class="text-opinion">
+          <b>Sé mejor programador</b><br><br>
+          <p>Realiza numerosos cursos para estar actualizado día a día en un
+            mundo que está acelerando cada vez más rápido.</p>
+        </div>
+      </div>
+  </section>
+
+  <button class="opinion-boton">
+    Ve más cursos de equis aqui
+  </button>
+
+  <footer class="footer">
+    <div class="container grid grid--footer-cols">
+      <div class="logo-col">
+        <a href="#" class="footer-logo"><img class="logo" src="imagen/logo equis.png" alt="logo equis"></a>
+        <ul class="social-links">
+          <li><a href="#" class="footer-link"><ion-icon name="logo-tiktok" class="redes"></ion-icon></a></li>
+          <li><a href="#" class="footer-link"><ion-icon name="logo-twitter" class="redes"></ion-icon></a></li>
+          <li><a href="#" class="footer-link"><ion-icon name="logo-whatsapp" class="redes"></ion-icon></a></li>
+        </ul>
+        <p class="copyright">Copyright &copy; 2024 by Cris, Antonio and Lunna, Inc. All rights reserved.</p>
+      </div>
+      <div class="address-col">
+        <p class="footer-heading">Contacta con nosotros</p>
+        <address class="contacts">
+          <p class="address">
+            C. Frederick Terman, 3, Campanillas,<br>29590 Málaga
+          </p>
+          <p>
+            <a class="footer-link" href="tel:687-425-789">Tlfn: 687-425-789</a>
+            <br>
+            <a class="footer-link" href="email@email.com">equis.support@email.com</a>
+          </p>
+        </address>
+      </div>
+      <nav class="nav-col">
+        <p class="footer-heading">Categorias</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Inteligencia artificial</a></li>
+          <li><a class="footer-link" href="#">Diseño</a></li>
+          <li><a class="footer-link" href="#">Diseño Web y App</a></li>
+          <li><a class="footer-link" href="#">Fotografia y video</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Idioma</p>
+        <ul class="footer-nav">
+          <li><button class="idioma-boton">Español</button></li>
+        </ul>
+      </nav>
+
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

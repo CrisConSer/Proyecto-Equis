@@ -1,0 +1,424 @@
+/****************************************/
+/* ATOMS - PERSONALITY CONSISTENCY  SYSTEM*/
+/****************************************/
+/*
+     /*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+            MAIN COLOR: #ebcc49
+            GREY FOR TEXT: #424242
+        */
+
+/* ------------------------ */
+/* GLOBAL/UNIVERSAL STYLES */
+/* ------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL/REUSABLE STYLES */
+/* ------------------------ */
+html {
+    font-size: 62.5%;
+    /*con esto 1rem equivalen a 10px*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    background-color: #f3f2f1;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES -  */
+/* ------------------------ */
+
+/*--------------- BARRA DE NAVEGACION ---------------*/
+
+#openChatbotBtn {
+    position: fixed;
+      bottom: 60px; /* Ajusta la distancia desde abajo según tus necesidades */
+      right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+
+.logo {
+    width: 10rem;
+}
+
+.navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 4.8rem 1.6rem 4.8rem;
+    background-image: linear-gradient(to bottom, #8a8075, #f3f2f1);
+    font-weight: 800;
+    transition: transform 0.3s ease-in-out;
+    /* Añadido para suavizar la animación */
+    z-index: 1000;
+}
+
+.navegacion.oculto {
+    transform: translateY(-100%);
+}
+
+.enlaces {
+    color: #424242;
+    text-decoration: none;
+    text-shadow: 0 0 0.1rem rgba(0, 0, 1rem, 0.3);
+    padding: 0.05rem 0.1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.enlaces:hover {
+    transition: 0.4s;
+    color: #ebcc49;
+    text-shadow: 0 0 1rem #00000066;
+}
+
+.list-ul {
+    list-style-type: none;
+    padding: 2rem;
+    position: absolute;
+    display: none;
+    margin-top: 1.0rem;
+}
+
+.list-li {
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+    color: #424242;
+}
+
+/* Estilos para el menú desplegable */
+.list-li:hover .list-ul {
+    display: block;
+    background-color: #f3f2f1;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.list-ul li {
+    display: block;
+}
+
+.list-li:hover {
+    color: #ebcc49;
+}
+
+.titulo {
+    color: #424242;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.barra-busqueda input {
+    width: 45rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem #00000033;
+    border-radius: 0.5rem;
+}
+
+.input-container {
+    position: relative;
+}
+
+.lupa-icono {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.usuario-icono {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/*--------------- HEADER ---------------*/
+.carrusel {
+    width: 130rem;
+    height: 55rem;
+    margin: 10rem auto;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.img-container img {
+    width: 130rem;
+    height: 55rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    align-items: center;
+}
+
+#arrow-image-right {
+    width: 8rem;
+    height: 8rem;
+    margin-left: 7rem;
+    cursor: pointer;
+}
+
+#arrow-image-left {
+    width: 8rem;
+    height: 8rem;
+    margin-left: -160rem;
+    cursor: pointer;
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translateY(32px);
+    display: flex;
+    gap: 12px;
+    /*funciona con display flex solo*/
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #424242;
+    background-color: #e6fcf5;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #424242;
+}
+
+/*--------------- SECTION CARDS ---------------*/
+
+.title-cards {
+    font-size: 30px;
+    margin-left: 23.40rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: auto;
+    /* Cambiado de margin-left: 2rem; a margin-left: auto; */
+    margin-right: auto;
+    /* Agregado para centrar horizontalmente */
+    max-width: 10rem;
+    /* Agregado para limitar el ancho máximo */
+    justify-content: center;
+    /* Agregado para centrar horizontalmente en el contenedor */
+    gap: 5rem;
+    /* Agregado para agregar espacio entre las tarjetas */
+    margin-bottom: 10rem;
+    align-items: center;
+}
+
+.container-cards-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: auto;
+    /* Cambiado de margin-left: 2rem; a margin-left: auto; */
+    margin-right: auto;
+    /* Agregado para centrar horizontalmente */
+    max-width: 10rem;
+    /* Agregado para limitar el ancho máximo */
+    justify-content: center;
+    /* Agregado para centrar horizontalmente en el contenedor */
+    gap: 5rem;
+    /* Agregado para agregar espacio entre las tarjetas */
+    margin-bottom: 20rem;
+    align-items: center;
+}
+
+/*--------------- SECTION OPINION ---------------*/
+.opinion {
+    width: 130rem;
+    height: 55rem;
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.img-opinion img {
+    width: 130rem;
+    height: 55rem;
+    object-fit: cover;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+
+
+.text-opinion{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: 40px;
+    margin-right: 140px;
+    text-align:center;
+    color: #424242;
+    font-size: 24px;
+}
+
+.opinion-boton {
+    margin-left: auto;
+    /* Cambiado de margin-left: 75rem; a margin-left: auto; */
+    margin-right: auto;
+    /* Agregado para centrar horizontalmente */
+    display: block;
+    /* Agregado para ocupar todo el ancho disponible y centrar */
+    margin-bottom: 10rem;
+    padding: 1.5rem 15rem 1.5rem 15rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #f3f2f1;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ebcc49;
+    cursor: pointer;
+}
+
+
+
+/*--------------- FOOTER ---------------*/
+/*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/
+footer {
+    font-size: 1.6rem;
+    padding-left: 4.8rem;
+    padding-top: 9.8rem;
+    height: 40rem;
+    background-color: #adb5bd;
+    background-image: linear-gradient(#f3f2f1, #616161);
+}
+
+.grid--footer-cols {
+    display: grid;
+    grid-template-columns: 6fr 4fr 4fr 1fr 1fr;
+}
+
+.footer-heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #424242;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #ebcc49;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.redes {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    background-color: #4242420b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #424242;
+    margin-top: auto;
+}
+
+.address-col {}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.idioma-boton {
+    padding: 1.2rem 8rem 1.2rem 8rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: 2px solid #424242;
+    color: #424242;
+    border-radius: 0.5rem;
+    background-color: #4242420b;
+    cursor: pointer;
+
+}
