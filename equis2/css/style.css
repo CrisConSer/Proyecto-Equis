@@ -45,14 +45,18 @@ body {
 
 #openChatbotBtn {
     position: fixed;
-      bottom: 60px; /* Ajusta la distancia desde abajo según tus necesidades */
-      right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
-      padding: 10px 20px;
-      cursor: pointer;
-      width: 120px;
-      z-index: 1000;
-
+    bottom: 60px; /* Ajusta la distancia desde abajo según tus necesidades */
+    right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 120px;
+    z-index: 1000;
+    transition: transform 0.3s;
   }
+
+#openChatbotBtn:hover{
+    transform: scale(1.4);
+}
 
 .logo {
     width: 10rem;
@@ -171,13 +175,14 @@ body {
     border-radius: 0.8rem;
     display: flex;
     align-items: center;
-    position: relative
+    position: relative;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .img-container img {
-    width: 130rem;
+    width: 100%;
     height: 55rem;
-    object-fit: cover;
     border-radius: 0.8rem;
     align-items: center;
 }
@@ -273,25 +278,46 @@ body {
     position: relative
 }
 
-.img-opinion img {
+.img-encima{
+    position: absolute;
+    z-index: 1;
+    width:50rem;
+    margin-left: 10rem;
+    border-radius: 1rem;
+    
+}
+
+.img-opinion {
     width: 130rem;
     height: 55rem;
     object-fit: cover;
     align-items: center;
-    position: relative;
+    position: absolute;
     display: inline-block;
+    z-index: -1;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 7rem 0rem rgba(0,0,0,0.5);
 }
 
 
 .text-opinion{
     position: absolute;
-    top: 40%;
+    top: 32%;
     left: 50%;
-    margin-left: 40px;
-    margin-right: 140px;
+    margin-left: 4rem;
+    margin-right: 15rem;
     text-align:center;
     color: #424242;
-    font-size: 24px;
+    
+}
+
+.title-opinion{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.description-opinion{
+    font-size: 2.4rem;
 }
 
 .opinion-boton {
@@ -310,6 +336,11 @@ body {
     border-radius: 0.5rem;
     background-color: #ebcc49;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.opinion-boton:hover{
+    transform: scale(1.2);
 }
 
 
@@ -397,7 +428,6 @@ footer {
     margin-top: auto;
 }
 
-.address-col {}
 
 .contacts {
     font-style: normal;
