@@ -47,13 +47,11 @@ body {
     position: fixed;
       bottom: 60px; /* Ajusta la distancia desde abajo según tus necesidades */
       right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
-      background-color: #3498db;
-      color: #fff;
       padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
       cursor: pointer;
-      font-size: 16px;
+      width: 120px;
+      z-index: 1000;
+
   }
 
 .logo {
