@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/modal.js" defer></script>
   <script src="./js/js.js" defer></script>
   <script src="./js/arrow.js" defer></script>
   <script src="./js/carrito.js" defer></script>
@@ -74,10 +75,10 @@
         </div>
       </li>
     </ul>
-
-
-    <a href="" class="enlaces"><img src="imagen/usuario.png" alt="muñeco usuario" class="usuario-icono"></a>
+    <button id="btn-abrir-modal">abrir modal</button>
+  <a href="" class="enlaces"><img src="imagen/usuario.png" alt="muñeco usuario" class="usuario-icono"></a></button>
   </nav>
+
   <header class="carrusel">
     <div class="img-container">
       <img src="./imagen/Carrusel/dot1.jpg" alt="" id="imagen-principal">
@@ -95,7 +96,27 @@
       <button class="dot" id="dot-four"></button>
     </div>
   </header>
-  </header>
+
+  <!--Ventana modal para mostrar el login-->
+  <dialog id="formulario">
+    <h1>Inicio de sesión</h1>
+    <form action="post">
+      <div class="username">
+        <input type="text" required>
+        <label>Nombre de usuario</label>
+      </div>
+      <div class="username">
+        <input type="password" required>
+        <label>Contraseña</label>
+      </div>
+      <div class="recordar">¿Olvidó la cotraseña?</div>
+      <button class="btn-login">Entrar</button>
+      <div class="registrarse">
+        Quiero hacer el <a href="#">registro</a>
+      </div>
+    </form>
+  </dialog>
+
   <p class="title-cards">Cursos destacados</p>
   <section class="container-cards">
     <div class="card">
@@ -368,14 +389,14 @@
   </section>
 
   <section class="opinion">
-      <img src="imagen/fondo-opinion.jpg" alt="pagina opiniones" class="img-opinion">
-        <div class="text-opinion">
-          <p class="title-opinion">Sé mejor programador</p><br><br>
-          <p class="description-opinion">Realiza numerosos cursos para estar actualizado día a día en un
-            mundo que está acelerando cada vez más rápido.</p>
-        </div>
-        <img src="./imagen/muchacho_programando.jpg" class="img-encima" alt=""> 
-  </section>
+    <img src="imagen/fondo-opinion.jpg" alt="pagina opiniones" class="img-opinion">
+      <div class="text-opinion">
+        <p class="title-opinion">Sé mejor programador</p><br><br>
+        <p class="description-opinion">Realiza numerosos cursos para estar actualizado día a día en un
+          mundo que está acelerando cada vez más rápido.</p>
+      </div>
+      <img src="./imagen/muchacho_programando.jpg" class="img-encima" alt=""> 
+</section>
 
   <button class="opinion-boton">
     Ve más cursos de equis aqui
@@ -383,48 +404,47 @@
 
   <footer class="footer">
     <div class="container grid grid--footer-cols">
-      <div class="logo-col">
-        <a href="#" class="footer-logo"><img class="logo" src="imagen/logo equis.png" alt="logo equis"></a>
-        <ul class="social-links">
-          <li><a href="#" class="footer-link"><ion-icon name="logo-tiktok" class="redes"></ion-icon></a></li>
-          <li><a href="#" class="footer-link"><ion-icon name="logo-twitter" class="redes"></ion-icon></a></li>
-          <li><a href="#" class="footer-link"><ion-icon name="logo-whatsapp" class="redes"></ion-icon></a></li>
-        </ul>
-        <p class="copyright">Copyright &copy; 2024 by Cris, Antonio and Lunna, Inc. All rights reserved.</p>
-      </div>
-      <div class="address-col">
-        <p class="footer-heading">Contacta con nosotros</p>
-        <address class="contacts">
-          <p class="address">
-            C. Frederick Terman, 3, Campanillas,<br>29590 Málaga
-          </p>
-          <p>
-            <a class="footer-link" href="tel:687-425-789">Tlfn: 687-425-789</a>
-            <br>
-            <a class="footer-link" href="email@email.com">equis.support@email.com</a>
-          </p>
-        </address>
-      </div>
-      <nav class="nav-col">
-        <p class="footer-heading">Categorias</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="#">Inteligencia artificial</a></li>
-          <li><a class="footer-link" href="#">Diseño</a></li>
-          <li><a class="footer-link" href="#">Diseño Web y App</a></li>
-          <li><a class="footer-link" href="#">Fotografia y video</a></li>
-        </ul>
-      </nav>
+        <div class="logo-col">
+            <a href="#" class="footer-logo"><img class="logo" src="imagen/logo equis.png" alt="logo equis"></a>
+            <ul class="social-links">
+                <li><a href="#" class="footer-link"><ion-icon name="logo-tiktok" class="redes"></ion-icon></a></li>
+                <li><a href="#" class="footer-link"><ion-icon name="logo-twitter" class="redes"></ion-icon></a></li>
+                <li><a href="#" class="footer-link"><ion-icon name="logo-whatsapp" class="redes"></ion-icon></a></li>
+            </ul>
+            <p class="copyright">Copyright &copy; 2024 by Cris, Antonio and Lunna, Inc. All rights reserved.
+            </p>
+        </div>
+        <div class="address-col">
+            <p class="footer-heading">Contacta con nosotros</p>
+            <address class="contacts">
+                <p class="address">
+                    C. Frederick Terman, 3, Campanillas,<br>29590 Málaga
+                </p>
+                <p>
+                    <a class="footer-link" href="tel:687-425-789">Tlfn: 687-425-789</a>
+                    <br>
+                    <a class="footer-link" href="email@email.com">equis.support@email.com</a>
+                </p>
+            </address>
+        </div>
+        <nav class="nav-col">
+            <p class="footer-heading">Categorias</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Inteligencia artificial</a></li>
+                <li><a class="footer-link" href="#">Diseño</a></li>
+                <li><a class="footer-link" href="#">Diseño Web y App</a></li>
+                <li><a class="footer-link" href="#">Fotografia y video</a></li>
+            </ul>
+        </nav>
 
-      <nav class="nav-col">
-        <p class="footer-heading">Idioma</p>
-        <ul class="footer-nav">
-          <li><button class="idioma-boton">Español</button></li>
-        </ul>
-      </nav>
-
-
+        <nav class="nav-col">
+            <p class="footer-heading">Idioma</p>
+            <ul class="footer-nav">
+                <li><button class="idioma-boton">Español</button></li>
+            </ul>
+        </nav>
     </div>
-  </footer>
+</footer>
 
 </body>
 
