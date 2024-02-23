@@ -162,10 +162,17 @@ body {
     transform: translateY(-50%);
 }
 
-.usuario-icono {
+#btn-abrir-modal {
     width: 3rem;
     height: 3rem;
+    cursor:pointer;
 }
+  
+.bars{
+    display: none;    
+}
+
+  
 /*--------------- MODAL WINDOW ---------------*/
 #formulario{
     top: 50%;
@@ -588,7 +595,57 @@ footer {
 
 }
 
-/* Consulta de medios para pantallas más pequeñas */
+/*mediaquerys*/
+/*CARDS*/
+@media screen and (max-width: 1450px) {
+    .container-cards,
+    .container-cards-two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-cards,
+    .container-cards-two {
+      grid-template-columns: 1fr;
+    }
+}
+
+/*media query para el menu hamburguesa*/
+@media screen and (max-width: 1040px) {
+  .esconder{
+      display: none;
+  }
+  .bars{
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      right: 50px;
+      
+      
+  }
+  .bars .line{
+      width: 3rem;
+      height: 0.3rem;
+      background-color: #fff;
+      margin: 0.6rem 0rem;
+      
+  }
+}
+
+/*imagenes*/
+@media screen and (max-width: 1350px) {
+    #imagen-principal{
+        width: 80%;
+        margin: 10rem auto;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        position: relative
+    }
+}
+
+/* FOOTER */
 @media screen and (max-width: 1530px) {
     .grid--footer-cols {
         
@@ -614,25 +671,13 @@ footer {
     }
 }
 
-/*mediaquerys*/
-
-@media screen and (max-width: 1450px) {
-    .container-cards,
-    .container-cards-two {
-      grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1536px){
+    #arrow-image-left{
+        display: none;
     }
-}
 
-@media screen and (max-width: 800px) {
-    .container-cards,
-    .container-cards-two {
-      grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    #imagen-principal{
-        width: 80%;
+    #arrow-image-right{
+        display: none;
     }
 }
 

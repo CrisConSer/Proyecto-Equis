@@ -1,6 +1,7 @@
 const btnAbrirModal = document.querySelector('#btn-abrir-modal');
 const btnCerrarModal = document.querySelector('#btn-cerrar-modal');
 const modal = document.querySelector('#formulario');
+const burguer = document.querySelector('.bars');
 
 btnAbrirModal.addEventListener("click",()=>{
     modal.showModal();
@@ -8,4 +9,8 @@ btnAbrirModal.addEventListener("click",()=>{
 
 btnCerrarModal.addEventListener("click",()=>{
     modal.close();
+})
+
+burguer.addEventListener("click",()=>{
+    
 })

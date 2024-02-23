@@ -21,12 +21,26 @@
 </head>
 
 <body>
-  <img id="openChatbotBtn" src="./imagen/robot.png">Abrir Chatbot</img>
+
   <nav class="navegacion">
     <img src="imagen/logo equis.png" alt="logo equis" class="logo">
+    
+    <div class="bars">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+  <!--Ventana hamburguesa para mostrar el nav-->
+  <dialog id="navegacion">
+      <a href="list-nav">Categorias</a>
+      <a href="list-nav">Enseña equis</a>
+      <a href="list-nav">Perfil</a>
+  </dialog>
+
     <ul>
       <li class="list-li">
-        <a href="#" class="enlaces">Categorias</a>
+        <a href="#" class="enlaces esconder">Categorias</a>
         <ul class="list-ul">
           <li class="list-li">Inteligencia Artificial</li>
           <li class="list-li">Ciencia de Datos</li>
@@ -37,9 +51,9 @@
         </ul>
       </li>
     </ul>
-    <a href="#" class="enlaces">Enseña equis</a>
+    <a href="#" class="enlaces esconder">Enseña equis</a>
     <form action="#" method="get" class="barra-busqueda">
-      <div class="input-container">
+      <div class="input-container esconder">
         <svg xmlns="http://www.w3.org/2000/svg" class="lupa-icono" width="22" height="23" viewBox="0 0 22 23"
           fill="none">
           <path
@@ -51,8 +65,8 @@
     </form>
     <ul>
       <li class="submenu">
-        <img src="imagen/cart.png" id="img-carrito" />
-        <div id="carrito" class="carrito">
+        <img src="imagen/cart.png" id="img-carrito" class="esconder"/>
+        <div id="carrito" class="carrito" >
 
           <table id="lista-carrito" class="u-full-width">
             <thead>
@@ -75,19 +89,22 @@
         </div>
       </li>
     </ul>
-    <button id="btn-abrir-modal">abrir modal</button>
-  <a href="" class="enlaces"><img src="imagen/usuario.png" alt="muñeco usuario" class="usuario-icono"></a></button>
+    <a><img src="imagen/usuario.png" alt="boton-user" id="btn-abrir-modal" class="esconder"></a>
   </nav>
+
+   <!--CHATBOX-->
+   <img id="openChatbotBtn" src="./imagen/robot.png"></img>
+
 
   <header class="carrusel">
     <div class="img-container">
-      <img src="./imagen/Carrusel/dot1.jpg" alt="" id="imagen-principal">
+      <img src="./imagen/Carrusel/dot1.jpg" alt="carrusel" id="imagen-principal">
     </div>
     <img onmouseout="this.src='./imagen/flecha_gris.png'" onmouseover="this.src='./imagen/flecha_amarilla.png'"
-      src="./imagen/flecha_gris.png" id="arrow-image-right" />
+      src="./imagen/flecha_gris.png" id="arrow-image-right"/>
     <img onmouseout="this.src='./imagen/flecha_gris_left.png'"
       onmouseover="this.src='./imagen/flecha_amarilla_left.png'" src="./imagen/flecha_gris_left.png"
-      id="arrow-image-left" />
+      id="arrow-image-left"/>
 
     <div class="dots">
       <button class="dot" id="dot-one"></button>
