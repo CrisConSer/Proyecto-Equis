@@ -11,7 +11,7 @@ btnAbrirBurguer.addEventListener("click",()=>{
 
 btnAbrirModal.addEventListener("click",()=>{
     modal.showModal();
-    console.log('clickando bubruger');
+    
 })
 
 btnCerrarModal.addEventListener("click",()=>{
